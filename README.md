@@ -13,3 +13,4 @@ A simple, modular expense tracking application developed using Agile methodologi
 Configured with GitHub Actions for automated testing.
 
 ## added lines in order to simulate pull requests
+dummy line
