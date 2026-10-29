@@ -37,3 +37,6 @@ def fetch_expenses(conn, category=None, date=None):
         params.append(date)
     cursor.execute(query, params)
     return cursor.fetchall()
+
+def get_total():
+    pass
