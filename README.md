@@ -1,3 +1,4 @@
+
 # ExpenseTracker
 
 A simple, modular expense tracking application developed using Agile methodologies and Test-Driven Development (TDD).
@@ -10,3 +11,5 @@ A simple, modular expense tracking application developed using Agile methodologi
 
 ## CI/CD
 Configured with GitHub Actions for automated testing.
+
+## added lines in order to simulate pull requests
