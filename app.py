@@ -40,3 +40,6 @@ def fetch_expenses(conn, category=None, date=None):
 
 def get_total():
     pass
+
+def get_average():
+    pass
