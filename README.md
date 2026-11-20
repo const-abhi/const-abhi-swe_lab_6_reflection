@@ -16,6 +16,7 @@ A lightweight Python and SQLite expense tracker for the CSE 3206 Software Engine
 
 ## Files
 - `app.py`: backward-compatible functions and service factory.
+- `terminal_menu.py`: simple command-line interface built on `ExpenseService`.
 - `database_manager.py`: Singleton database manager.
 - `expense_repository.py`: data access.
 - `expense_service.py`: validation and business logic.
@@ -24,12 +25,28 @@ A lightweight Python and SQLite expense tracker for the CSE 3206 Software Engine
 - `test_service.py`: `MagicMock`-based service tests.
 
 ## Run
+Create and activate a virtual environment, then install dependencies:
+
 ```bash
-python3 -m pip install -r requirements.txt
-python3 -m pytest -v
-python3 -m pytest --cov=. --cov-report=term-missing
-python3 app.py
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
+
+Run the interactive terminal interface:
+
+```bash
+python terminal_menu.py
+```
+
+Run tests and coverage:
+
+```bash
+python -m pytest -v
+python -m pytest --cov=. --cov-report=term-missing
+```
+
+`python app.py` initializes the database; it does not launch the interactive menu.
 
 The current project is a Python service/application prototype. It does not include a browser interface or Selenium test. Do not claim Selenium was implemented unless you add and execute a browser-based test.
 
